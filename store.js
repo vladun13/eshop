@@ -8,7 +8,7 @@ var storeGenerator = function () {
 				// for (var i = 0; i < orderedProducts.length; i++) {
 				// 	print += orderedProducts[i].name + ' ';
 				// }
-				print =  "מוצרים " + orderedProducts.length;
+				print = orderedProducts.length;
 			} else {
 				print = '0 מוצרים'
 			}
@@ -55,14 +55,30 @@ function createProduct(productData) {
 		text: productData.text,
 		class: "prefix",
 	}).appendTo(container)
+	/*var weight = */$('<span>', {
+		text: productData.weight,
+		class: "weight",
+	}).appendTo(container)
+	/*var offer = */$('<span>', {
+		text: productData.offer,
+		class: "offer",
+	}).appendTo(container)
 	/*var productPrice = */$('<span>', {
 		text: productData.price,
 		class: "price",
 	}).appendTo(container)
+	/*var price4unit = */$('<span>', {
+		text: productData.price4unit,
+		class: "price4unit",
+	}).appendTo(container)
+	/*var totalDiscount = */$('<span>', {
+		text: productData.totalDiscount,
+		class: "totalDiscount",
+	}).appendTo(container)
 	$('<button>', {
 		text: 'הוספה לסל',
 		click: function (event) {
-			store.order(productData);
+		store.order(productData);
 		},
 	}).appendTo(container)
 	return container;

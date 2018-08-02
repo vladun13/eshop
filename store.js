@@ -10,7 +10,7 @@ var storeGenerator = function () {
 				// }
 				print = orderedProducts.length;
 			} else {
-				print = '0 מוצרים'
+				print = '0'
 			}
 			$('#products').text(print);
 		},

@@ -15,15 +15,17 @@ body {
 
 
 #busket {
+	display:  flex;
 	width: 12%;
-	height: 30px;
+	height: 100%;
 	/* position: relative; */
 	border: 1px solid #D8D8D8;
 	padding: 3px 5px;
 	box-sizing: border-box;
-	font-size: 12px;
-	text-align: left;
+	/* font-size: 12px; */
+	/* text-align: left; */
 	margin-top:  10px;
+	justify-content: space-between;
 }
 
 #icon {
@@ -32,13 +34,18 @@ body {
 	height: 27px;
 	cursor: pointer;
 	background-image: url(https://gcstatic.mysupermarket.co.il/main_8.26.75/sprites/header/he-il/cart_empty_hover.png);
+	/* float: right; */
 	background-repeat: no-repeat;
 	filter: invert(1);
+	transform: translateX(10px);
 }
 
 #products {
+	/* width:  100%; */
 	border: 1px solid black;
 	border-radius: 50%;
+	/* float: right; */
+	font-size: 20px;
 }
 
 
@@ -102,11 +109,10 @@ nav {
 	display: flex;
 	margin: auto;
 	background-color: #fff;
-	/* width: calc(100%/14); */
 }
 
 nav span {
-	width: 5.88%;
+	width: calc(100%/14);
 	height: 53px;
 	border-left: 1px solid #dcdcdc;
 	border-top: 1px solid #E5E5E5;

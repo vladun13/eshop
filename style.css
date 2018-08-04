@@ -11,12 +11,13 @@ body {
 	flex-wrap: wrap;
 	background-color: #fff;
 	border-bottom: 1px solid #E5E5E5;
+	/* border-top: 1px solid #E5E5E5; */
 }
 
 
 #busket {
 	display:  flex;
-	width: 12%;
+	width: 10%;
 	height: 100%;
 	/* position: relative; */
 	border: 1px solid #D8D8D8;
@@ -26,6 +27,11 @@ body {
 	/* text-align: left; */
 	margin-top:  10px;
 	justify-content: space-between;
+}
+
+#clear_busket {
+	background: #fff;
+	border-radius: 30%;
 }
 
 #icon {
@@ -84,10 +90,14 @@ body {
 	background-color: #b2d233;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
-	height: 35px;
 	width:  33px;
 	border:  0;
-	position:  absolute;
+	height: 19px;
+	margin: auto;
+	/* position:  absolute; */
+	background-image: url(https://gcstatic.mysupermarket.co.il/main_8.26.75/sprites/header/header_sprite-he-il.png);
+	background-repeat: no-repeat;
+	background-position: 0px -193px;
 } 
 
 #search {
@@ -105,19 +115,28 @@ body {
 	background-repeat: no-repeat;
 }
 
+
 nav {
 	display: flex;
-	margin: auto;
+	/* margin: 0 auto; */
 	background-color: #fff;
+	width: 100%;
+	justify-content:  center;
+	border-top: 1px solid #E5E5E5;
 }
 
-nav span {
-	width: calc(100%/14);
+nav button {
+	font-family: Carmela,Arial;
+	font-size: 13px;
+	width: 5.88%;
 	height: 53px;
-	border-left: 1px solid #dcdcdc;
-	border-top: 1px solid #E5E5E5;
+	padding: 0 5px;
+	color: #6f6f6f;
+	/* border-left: 1px solid #dcdcdc; */
+	border: 1px solid #E5E5E5;
 	/* border-bottom: 1px solid #E5E5E5; */
-	border-right: 1px solid #E5E5E5;
+	/* border-right: 1px solid #E5E5E5; */
+	background: #fff;
 }
 
 

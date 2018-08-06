@@ -20,13 +20,15 @@ body {
 
 
 #busket {
+	align-self: center;
 	display:  flex;
+	align-items: center;
 	width: 10%;
 	height: 100%;
 	border: 1px solid #D8D8D8;
 	padding: 3px 5px;
 	box-sizing: border-box;
-	margin-top: 13px;
+	/* margin-top: 13px; */
 	justify-content: space-between;
 	margin-left: 9rem;
 }
@@ -60,7 +62,7 @@ body {
 
 #products {
 	position: absolute;
-	top: -14px;
+	top: -20px;
 	right: -20px;
 	width: 30px;
 	height: 30px;
@@ -103,7 +105,7 @@ body {
 	height: 31px;
 	text-decoration: none;
 	text-align:  right;
-	margin-bottom: 15px;
+	/* margin-bottom: 15px; */
 } 
 
 #base button {
@@ -115,7 +117,6 @@ body {
 	/* background: url('img/header_sprite-he-il.png') no-repeat 0 -193px; */
 	width: 33px;
 	height: 35px;
-	/* position: relative; */
 } 
 
 #search {

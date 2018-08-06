@@ -108,15 +108,14 @@ body {
 	/* margin-bottom: 15px; */
 } 
 
-#base button {
+#first_button {
 	background-color: #b2d233;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	border:  0;
-	/* height: 100%; */
-	/* background: url('img/header_sprite-he-il.png') no-repeat 0 -193px; */
 	width: 33px;
 	height: 35px;
+	transform: translateX(10px);
 } 
 
 #search {

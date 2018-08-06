@@ -3,15 +3,7 @@ var storeGenerator = function () {
 	return {
 		getAll: function () {return orderedProducts;},
 		print: function () {
-			var print = '';
-			if (orderedProducts.length) {
-				// for (var i = 0; i < orderedProducts.length; i++) {
-				// 	print += orderedProducts[i].name + ' ';
-				// }
-				print = orderedProducts.length;
-			} else {
-				print = '0'
-			}
+			var print = orderedProducts.length ? orderedProducts.length : '0';
 			$('#products').text(print);
 		},
 		order: function (product) {

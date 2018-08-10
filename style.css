@@ -6,9 +6,6 @@ body {
 }
 
 
-
-
-
 #header {
 	display: flex;
 	flex-wrap: wrap;
@@ -28,7 +25,6 @@ body {
 	border: 1px solid #D8D8D8;
 	padding: 3px 5px;
 	box-sizing: border-box;
-	/* margin-top: 13px; */
 	justify-content: space-between;
 	margin-left: 9rem;
 }
@@ -84,9 +80,6 @@ body {
 	font-size: 12px;
 	font-family: Arial;
 	align-items: center;
-	/* margin-left: auto; */
-	/* margin-top: 10px; */
-	/* margin-right: 8px; */
 }
 
 
@@ -105,7 +98,6 @@ body {
 	height: 31px;
 	text-decoration: none;
 	text-align:  right;
-	/* margin-bottom: 15px; */
 } 
 
 #first_button {
@@ -133,11 +125,53 @@ body {
 	width: 204px;
 	background-repeat: no-repeat;
 	margin-left: 1rem;
-	/* margin-bottom: 13px; */
 	background-size: contain;
 	margin-right: 6rem;
 }
+form {display: flex;}
 
+#list {
+	display: flex;
+	border-radius: 5px;
+	border: 0;
+	color: #5f5f5f;
+	cursor: pointer;
+	height: 32px;
+	background: white;
+}
+
+
+#listIcon {
+	display: block;
+	background-image: url(img/header_sprite-he-il.png);
+	background-repeat: no-repeat;
+	background-position: 0 -212px;
+	width: 23px;
+	height: 20px;
+}
+
+
+#listIcon:hover {
+	display: block;
+	background-image: url(img/header_sprite-he-il.png);
+	background-repeat: no-repeat;
+	background-position: -17px -212px;
+	width: 23px;
+	height: 20px;
+}
+
+
+#shopList {
+	font-family: 'Carmela,Arial';
+	font-weight: normal;
+	font-size: 14px;
+	padding-right: 4px;
+}
+
+#list:hover {
+	background-color: #5f5f5f;
+	color: white;
+}
 
 nav {
 	display: flex;
@@ -159,24 +193,63 @@ nav button {
 }
 
 
+nav button:hover {
+	color: #83ce1a;
+	cursor: pointer;
+}
+
+#firstNavButton {
+	background: #f8f8f8;
+	color: #83ce1a;
+}
+
 #myshop {
-	background-image: url(https://gcstatic.mysupermarket.co.il/main_8.26.75/sprites/navigation/navigation_sprite-he-il.png);
-	background-position: -26px -1px;
-	background-repeat: no-repeat;
+	display: block;
+	background: url('img/sprite.png') no-repeat -28px -3px;
+	width: 50px;
+	height: 22px;
+}
+
+#secondNavButton:hover {
+	color: #e02625;
+}
+
+#lifestyle {
+	display: block;
+	margin: 0 auto;
+	background: url('img/sprite.png') no-repeat 0 -46px;
+	width: 19px;
+	height: 23px;
+}
+
+#lifestyle:hover {
+	display: block;
+	margin: 0 auto;
+	background: url('img/sprite.png') no-repeat -21 -46px;
+	width: 20px;
+	height: 23px;
+	background-position-x: -20px;
 }
 
 
 #special {
-	background-image: url(https://gcstatic.mysupermarket.co.il/main_8.26.75/sprites/navigation/navigation_sprite-he-il.png);
-	background-position: 0px -45px;
-	background-repeat: no-repeat;
+	display: block;
+	margin: 0 auto;
+	background: url('img/sprite.png') no-repeat 0 -25px;
+	width: 26px;
+	height: 18px;
 }
 
-#lifestyle {
-	background-image: url(https://gcstatic.mysupermarket.co.il/main_8.26.75/sprites/navigation/navigation_sprite-he-il.png);
-	background-position: 0px -23px;
-	background-repeat: no-repeat;
+
+#special:hover {
+	display: block;
+	margin: 0 auto;
+	background: url('img/sprite.png') no-repeat 0 -25px;
+	width: 26px;
+	height: 18px;
+	background-position-x: -25px;
 }
+
 
 #goods {
 	--count-in-row: 5;
@@ -246,11 +319,16 @@ nav button {
 	background-color: #5f5f5f;
 	border-radius: 5px;
 	text-align: center;
-	width: 100%;
+	width: 90%;
 	height: 35px;
 	color: #fff;
-	font-size: 14px;
+	font-size: 13px;
 	margin-bottom: 10px;
 	text-decoration: none;
+	border: 0;
+}
+
+.product button:hover {
+	background-color: #242E4D;
 }
 

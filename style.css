@@ -274,6 +274,7 @@ nav button:hover {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 10px;
 }
 
 .product:last-child {margin-right: auto;}
@@ -303,21 +304,48 @@ nav button:hover {
 	color: #a5a5a5;
 }
 
-.price {
+.discount {
+	width: 100%;
+	display: flex;
 	padding-top: 16px;
-	height: 55px;
+	justify-content: center;
+}
+
+.price {
+	/* height: 55px; */
 	font-size: 15px;
 	font-weight: 700;
 	color: #5f5f5f;
-	width:  100%;
+}
+
+
+.offer {
+	color: #009beb;
+	font-weight: 600;
+	font-size: 13px;
 }
 
 
 .price4unit {
+	width: 100%;
 	font-weight: 400;
 	font-size: 11px;
 	display: block;
 	color: #a5a5a5;
+}
+
+.expire {
+	width: 100%;
+}
+
+.totalDiscount {
+	width: 100%;
+	color: #b2d233;
+	font-weight: bold;
+	background-image: url(img/buytoday.png);
+	background-repeat: no-repeat;
+	background-position-x: 175px;
+	background-position-y: -5px;
 }
 
 

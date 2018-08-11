@@ -45,7 +45,7 @@ function createProduct(productData) {
 	}).appendTo(container)
 	var productInfo = $('<div>', {
 		class: "info",
-	}).appendTo(container);
+	}).appendTo(container)
 	var productName = $('<span>', {
 		text: productData.text,
 		class: "prefix",
@@ -54,22 +54,30 @@ function createProduct(productData) {
 		text: productData.weight,
 		class: "weight",
 	}).appendTo(productInfo)
-	/*var offer = */$('<span>', {
-		text: productData.offer,
-		class: "offer",
+	var productDiscount = $('<div>', {
+		class: "discount",
 	}).appendTo(container)
 	/*var productPrice = */$('<span>', {
 		text: productData.price,
 		class: "price",
-	}).appendTo(container)
+	}).appendTo(productDiscount)
+	/*var offer = */$('<span>', {
+		text: productData.offer,
+		class: "offer",
+	}).appendTo(productDiscount)
 	/*var price4unit = */$('<span>', {
 		text: productData.price4unit,
 		class: "price4unit",
+	}).appendTo(container)
+	$('<span>', {
+		text: productData.expire,
+		class: "expire",
 	}).appendTo(container)
 	/*var totalDiscount = */$('<span>', {
 		text: productData.totalDiscount,
 		class: "totalDiscount",
 	}).appendTo(container)
+	// $('.totalDiscount').prepend('<img id="theImg" src="img/buytoday.png" />')
 	$('<button>', {
 		text: 'הוספה לסל',
 		click: function (event) {

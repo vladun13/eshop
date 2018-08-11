@@ -285,11 +285,17 @@ nav button:hover {
 	object-fit: contain;
 }
 
+.info {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .prefix {
 	padding: 0 11px 10px 11px;
 	padding-top: 20px;
-	height: 60px;
+	height: 40px;
 	WIDTH: 100%;
+	text-align: right;
 }
 
 .weight {

@@ -43,14 +43,17 @@ function createProduct(productData) {
 	/*var productImage = */$('<img>', {
 		src: productData.image,
 	}).appendTo(container)
-	/*var productName = */$('<span>', {
+	var productInfo = $('<div>', {
+		class: "info",
+	}).appendTo(container);
+	var productName = $('<span>', {
 		text: productData.text,
 		class: "prefix",
-	}).appendTo(container)
+	}).appendTo(productInfo)
 	/*var weight = */$('<span>', {
 		text: productData.weight,
 		class: "weight",
-	}).appendTo(container)
+	}).appendTo(productInfo)
 	/*var offer = */$('<span>', {
 		text: productData.offer,
 		class: "offer",

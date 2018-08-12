@@ -319,7 +319,7 @@ secondNavButton:hover .lifestyle {
 	display: flex;
 	padding-top: 16px;
 	justify-content: center;
-	margin-bottom: 5px;
+	align-items: flex-end;
 }
 
 .price {

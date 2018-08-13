@@ -375,9 +375,25 @@ secondNavButton:hover .lifestyle {
 	margin-bottom: 10px;
 	text-decoration: none;
 	border: 0;
+	cursor: pointer;
 }
 
 .product button:hover {
 	background-color: #242E4D;
 }
 
+@media only screen  and (max-width : 1030px) {
+	header {width: auto;}
+	.product {
+	--count-in-row: 3;
+	width: calc((100% - ((var(--count-in-row) - 1) * 14px)) / var(--count-in-row) - 2 * var(--border-width));
+	}
+}
+
+@media only screen and (min-width : 1030px) and (max-width : 1195px) {
+	header {width: auto;}
+	.product {
+	--count-in-row: 4;
+	width: calc((100% - ((var(--count-in-row) - 1) * 14px)) / var(--count-in-row) - 2 * var(--border-width));
+	}
+}

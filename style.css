@@ -143,8 +143,7 @@ form {display: flex;}
 	cursor: pointer;
 	background: white;
 	padding: 5px;
-	padding-left: 15px;
-	transition: background-color 1s cubic-bezier(0.42, 0, 0.58, 1.0), color 1s linear;
+	padding-left: 0;
 }
 
 
@@ -166,7 +165,6 @@ form {display: flex;}
 
 #list:hover {
 	background: #5F5F62;
-	transition: background-color 1s cubic-bezier(0.42, 0, 0.58, 1.0), color 1s linear;
 }
 
 #list:hover #listIcon {
@@ -383,26 +381,40 @@ nav button:hover {
 
 @media only screen and (max-width: 600px) {
 	nav {display: none;}
+	#header {
+		display: flex;
+	}
+	#base {
+		display: flex;
+		flex-wrap: unset;
+	}
+	#base input {width: 50%;margin-right: 10px;}
+	#logo {height: 30px;margin-left: 0;}
+	#busket {
+		width: 35%;
+		height: 100%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	#icon {translateX(-5px);}	
 	.product {
 	--count-in-row: 1;
 	width: calc((100% - ((var(--count-in-row) - 1) * 14px)) / var(--count-in-row) - 2 * var(--border-width));
 	}
 } 
-
-
-@media only screen and (max-width: 924px) {
+ @media only screen and (min-width: 768px) {
 	nav {display: none;}
 	.product {
 	--count-in-row: 3;
 	width: calc((100% - ((var(--count-in-row) - 1) * 14px)) / var(--count-in-row) - 2 * var(--border-width));
 	}
-} 
+}
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width : 1200px) {
 	/* header {display: none;} */
 	.product {
 	--count-in-row: 4;
 	width: calc((100% - ((var(--count-in-row) - 1) * 14px)) / var(--count-in-row) - 2 * var(--border-width));
 	}
-} 
-
+}
+ 

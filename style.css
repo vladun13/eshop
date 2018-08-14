@@ -144,6 +144,7 @@ form {display: flex;}
 	background: white;
 	padding: 5px;
 	padding-left: 15px;
+	transition: background-color 1s cubic-bezier(0.42, 0, 0.58, 1.0), color 1s linear;
 }
 
 

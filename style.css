@@ -169,9 +169,9 @@ form {display: flex;}
 
 #list:hover #listIcon {
 	display: flex;
-	background: url('img/header_sprite-he-il.png') no-repeat -10px -206px;
-	width: 28px;
-	height: 25px;
+	background: url('img/header_sprite-he-il.png') no-repeat -16px -202px;
+	width: 21px;
+	height: 32px;
 }
 
 #list:hover #shopList {

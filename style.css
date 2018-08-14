@@ -165,7 +165,7 @@ form {display: flex;}
 
 #list:hover {
 	background: #5F5F62;
-	transition: 1s;
+	transition: background-color 1s cubic-bezier(0.42, 0, 0.58, 1.0), color 1s linear;
 }
 
 #list:hover #listIcon {

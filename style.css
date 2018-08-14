@@ -375,18 +375,28 @@ nav button:hover {
 	background-color: #242E4D;
 }
 
-@media only screen  and (max-width : 1030px) {
-	header {width: auto;}
+@media only screen and (max-width: 600px) {
+	nav {display: none;}
+	.product {
+	--count-in-row: 1;
+	width: calc((100% - ((var(--count-in-row) - 1) * 14px)) / var(--count-in-row) - 2 * var(--border-width));
+	}
+} 
+
+
+@media only screen and (min-width: 768px) {
+	nav {display: none;}
 	.product {
 	--count-in-row: 3;
 	width: calc((100% - ((var(--count-in-row) - 1) * 14px)) / var(--count-in-row) - 2 * var(--border-width));
 	}
-}
+} 
 
-@media only screen and (min-width : 1030px) and (max-width : 1195px) {
-	header {width: auto;}
+@media only screen and (min-width: 992px) {
+	/* header {display: none;} */
 	.product {
 	--count-in-row: 4;
 	width: calc((100% - ((var(--count-in-row) - 1) * 14px)) / var(--count-in-row) - 2 * var(--border-width));
 	}
-}
+} 
+

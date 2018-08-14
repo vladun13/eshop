@@ -54,7 +54,7 @@ body {
 	background-image: url(https://gcstatic.mysupermarket.co.il/main_8.26.75/sprites/header/he-il/cart_empty_hover.png);
 	background-repeat: no-repeat;
 	filter: invert(1);
-	transform: translateX(30px) scale(1.2);
+	transform: translateX(0px) scale(1.2);
 }
 
 #products {
@@ -90,7 +90,7 @@ body {
 #base input {
 	border-radius: 5px;
 	border: 1px solid #b2d233;
-	width: 72px;
+	width: 200px;
 	height: 31px;
 	text-decoration: none;
 	text-align:  right;
@@ -128,7 +128,7 @@ body {
 	height: 50px;
 	width: 141px;
 	background-repeat: no-repeat;
-	margin-left: 1.7rem;
+	margin-left: 1rem;
 	background-size: contain;
 }
 form {display: flex;}

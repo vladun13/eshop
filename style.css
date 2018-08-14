@@ -10,9 +10,10 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #fff;
-	border-bottom: 1px solid #E5E5E5;
 	margin-bottom: 10px;
 	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
 }
 
 
@@ -26,7 +27,6 @@ body {
 	padding: 3px 5px;
 	box-sizing: border-box;
 	justify-content: space-between;
-	margin-left: 9rem;
 }
 
 #clear_busket {
@@ -59,23 +59,25 @@ body {
 
 #products {
 	position: absolute;
-	top: -15px;
-	right: -15px;
-	width: 30px;
-	height: 30px;
+	top: -25px;
+	right: -8px;
+	width: 35px;
+	height: 35px;
 	DISPLAY: flex;
 	border-radius: 50%;
 	justify-content: center;
 	align-items: center;
-	font-size: 20px;
-	background-color: #b2d233;
+	font-size: 18px;
+	background-color: #009beb;
 	color: white;
+	z-index: 1;
 }
 
 
 
 #base {
 	display: flex;
+	flex-wrap: wrap;
 	border-radius:	0 5px 5px 0;
 	color: #363636;
 	font-size: 12px;
@@ -84,22 +86,16 @@ body {
 }
 
 
-#list {
-	background-image: url(img/header_sprite-he-il.png);
-	background-repeat: no-repeat;
-	background-position: 0px -212px;
-	margin-right: 10px;
-	margin-top: 9px;
-}
 
 #base input {
 	border-radius: 5px;
 	border: 1px solid #b2d233;
-	width: 222px;
+	width: 72px;
 	height: 31px;
 	text-decoration: none;
 	text-align:  right;
 	margin-right: 1.6rem;
+	padding-right: 10px;
 } 
 
 #first_button {
@@ -130,55 +126,52 @@ body {
 #logo {
 	background-image: url(img/msm_logo_new_regular.png);
 	height: 50px;
-	width: 204px;
+	width: 141px;
 	background-repeat: no-repeat;
-	margin-left: 1rem;
+	margin-left: 1.7rem;
 	background-size: contain;
-	margin-right: 5rem;
 }
 form {display: flex;}
 
 #list {
 	align-self: center;
 	display: flex;
+	align-items: center;
 	border-radius: 5px;
 	border: 0;
 	color: #5f5f5f;
 	cursor: pointer;
-	height: 32px;
 	background: white;
-	padding: 0px;
+	padding: 5px;
+	padding-left: 15px;
 }
+
 
 
 #listIcon {
 	display: block;
-	background-image: url(img/header_sprite-he-il.png);
-	background-repeat: no-repeat;
-	background-position: 0 -210px;
-	width: 23px;
-	height: 20px;
-}
-
-
-#listIcon:hover {
-	display: block;
-	background-image: url(img/header_sprite-he-il.png);
-	background-repeat: no-repeat;
-	background-position: -17px -212px;
-	width: 23px;
-	height: 20px;
+	background: url('img/header_sprite-he-il.png') no-repeat 0 -202px;
+	width: 21px;
+	height: 32px;
 }
 
 
 #shopList {
 	font-family: Carmela,Arial;
 	font-weight: normal;
-	font-size: 13px;
-	padding-right: 4px;
+	padding: 5px;
 }
 
-#list:hover {
+
+#list:hover #listIcon {
+	display: flex;
+	background: #5F5F62 url('img/header_sprite-he-il.png') no-repeat -10px -206px;
+	width: 28px;
+	height: 25px;
+}
+
+#list:hover #shopList {
+	padding: 5px;	
 	background-color: #5f5f5f;
 	color: white;
 }
@@ -187,14 +180,15 @@ nav {
 	display: flex;
 	background-color: #fff;
 	width: 100%;
-	justify-content:  center;
 	border-top: 1px solid #E5E5E5;
+	margin: 0 auto;
+	margin-bottom: 10px;
 }
 
 nav button {
 	font-family: Carmela,Arial;
 	font-size: 13px;
-	width: 5.88%;
+	width: 7.14%;
 	height: 53px;
 	padding: 0 5px;
 	color: #6f6f6f;
@@ -216,8 +210,9 @@ nav button:hover {
 #myshop {
 	display: block;
 	background: url('img/sprite.png') no-repeat -28px -3px;
-	width: 50px;
+	width: 20px;
 	height: 22px;
+	margin: 0 auto;
 }
 
 #secondNavButton:hover {
@@ -232,7 +227,7 @@ nav button:hover {
 	height: 23px;
 }
 
-secondNavButton:hover .lifestyle {
+#secondNavButton:hover #lifestyle {
 	display: block;
 	margin: 0 auto;
 	background: url('img/sprite.png') no-repeat -21 -46px;
@@ -251,20 +246,19 @@ secondNavButton:hover .lifestyle {
 }
 
 
-#special:hover {
+#thirdNavButton:hover #special {
 	display: block;
 	margin: 0 auto;
 	background: url('img/sprite.png') no-repeat 0 -25px;
 	width: 26px;
 	height: 18px;
-	background-position-x: -25px;
+	background-position-x: -26px;
 }
 
 
 #goods {
 	--count-in-row: 5;
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
 	width: 80%;
 	margin: 0 auto;
@@ -287,8 +281,8 @@ secondNavButton:hover .lifestyle {
 	margin-bottom: 10px;
 }
 
-.product:last-child {margin-right: auto;}
-.product img {
+.product:last-child {}
+.product img.product-image {
 	padding: 10px 11px 0 11px;
 	height: 133px;
 	width: 100%;
@@ -317,6 +311,7 @@ secondNavButton:hover .lifestyle {
 .discount {
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	padding-top: 16px;
 	justify-content: center;
 	align-items: flex-end;
@@ -353,14 +348,12 @@ secondNavButton:hover .lifestyle {
 
 .totalDiscount {
 	width: 100%;
-	/* align-self: flex-end; */
 	color: #b2d233;
 	font-weight: bold;
-	/* background-image: url(img/buytoday.png);
-	background-repeat: no-repeat;
-	background-position-x: 175px;
-	background-position-y: -5px; */
 	margin-bottom: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 

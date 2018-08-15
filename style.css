@@ -54,13 +54,13 @@ body {
 	background-image: url(https://gcstatic.mysupermarket.co.il/main_8.26.75/sprites/header/he-il/cart_empty_hover.png);
 	background-repeat: no-repeat;
 	filter: invert(1);
-	transform: translateX(0px) scale(1.2);
+	transform: translateX(30px) scale(1.2);
 }
 
 #products {
 	position: absolute;
-	top: -25px;
-	right: -8px;
+	top: -20px;
+	right: -6px;
 	width: 35px;
 	height: 35px;
 	DISPLAY: flex;

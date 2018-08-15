@@ -21,7 +21,7 @@ body {
 	align-self: center;
 	display:  flex;
 	align-items: center;
-	width: 10%;
+	width: 15%;
 	height: 100%;
 	border: 1px solid #D8D8D8;
 	padding: 3px 5px;
@@ -379,7 +379,7 @@ nav button:hover {
 	transition: 1s;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 480px) {
 	nav {display: none;}
 	#header {
 		display: flex;
@@ -399,22 +399,77 @@ nav button:hover {
 	#icon {translateX(-5px);}	
 	.product {
 	--count-in-row: 1;
-	width: calc((100% - ((var(--count-in-row) - 1) * 14px)) / var(--count-in-row) - 2 * var(--border-width));
 	}
 } 
- @media only screen and (min-width: 768px) {
+
+@media (min-width: 481px) and (max-width: 767px) {
 	nav {display: none;}
+	#header {
+		display: flex;
+	}
+	#base {
+		display: flex;
+		flex-wrap: unset;
+		margin: 0 auto;
+	}
+	form {width: 150px;}
+	#base input {
+		width: 65%;
+		margin-right: 10px;
+		margin: 10px;
+	}
+	#first_button {
+		margin-top: 10px;
+		transform:translateX(13px);
+	}
+	#logo {
+		height: 30px;
+		margin-left: 0;
+	}
+	#busket {
+		width: 35%;
+		height: 100%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	#icon {translateX(-5px);}	
 	.product {
-	--count-in-row: 3;
-	width: calc((100% - ((var(--count-in-row) - 1) * 14px)) / var(--count-in-row) - 2 * var(--border-width));
+	--count-in-row: 2;
 	}
 }
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+	nav {display: none;}
+	#header {
+		display: flex;
+	}
+	#base {
+		display: flex;
+		flex-wrap: unset;
+		margin: 0 auto;
+	}
+	form {width: 150px;}
+	#base input {
+		width: 65%;
+		margin-right: 10px;
+		margin: 10px;
+	}
+	#first_button {
+		margin-top: 10px;
+		transform:translateX(13px);
+	}
+	#logo {
+		height: 30px;
+		margin-left: 0;
+	}
+	#busket {
+		width: 20%;
+		height: 100%;
+		margin: 0 auto;
+	}
+	#icon {translateX(-5px);}
+	.product {--count-in-row: 4;}
 
 @media only screen and (min-width: 992px) and (max-width : 1200px) {
-	/* header {display: none;} */
-	.product {
-	--count-in-row: 4;
-	width: calc((100% - ((var(--count-in-row) - 1) * 14px)) / var(--count-in-row) - 2 * var(--border-width));
-	}
+	.product {--count-in-row: 4;}
 }
- 
